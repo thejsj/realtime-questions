@@ -6,13 +6,14 @@
   "dependencies": {
     "bluebird": "^2.9.25",
     "express": "^4.12.3",
+    "forever": "^0.14.2",
     "rethinkdb": "^2.0.0",
     "rethinkdb-init": "0.0.4",
     "socket.io": "^1.3.5"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/forever/bin/forever app.js"
   },
   "author": "Michael Glukhovsky",
   "license": "MIT"
